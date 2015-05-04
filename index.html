@@ -22,13 +22,15 @@
 		  <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
 		  <script type="text/javascript">
 		    var svg = dimple.newSvg("#chartContainer", 590, 400);
-		    d3.tsv("/data/example_data.tsv", function (data) {
-		      data = dimple.filterData(data, "Owner", ["Aperture", "Black Mesa"])
+		    var dsv = d3.dsv(";", "text/plain");
+    		    //d3.csv("data/movies.csv", function (data)
+    		    dsv("data/datoss.csv", function (data) {
+        	    console.table(data);
 		      var myChart = new dimple.chart(svg, data);
 		      myChart.setBounds(75, 30, 485, 330);
-		      myChart.addPctAxis("x", "Unit Sales");
-		      var y = myChart.addCategoryAxis("y", "Month");
-		      y.addOrderRule("Date");
+		      myChart.addPctAxis("x", "Year");
+		      var y = myChart.addCategoryAxis("y", "% Losses");
+		
 		      myChart.addSeries("Channel", dimple.plot.area);
 		      myChart.addLegend(60, 10, 500, 20, "right");
 		      myChart.draw();
