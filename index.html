@@ -28,7 +28,7 @@
         	    console.table(data);
 		      var myChart = new dimple.chart(svg, data);
 		      myChart.setBounds(75, 30, 485, 330);
-		      myChart.addPctAxis("x", "Porcentajes");
+		      myChart.addPctAxis("x", "Values");
 		      var y = myChart.addCategoryAxis("y", "Year");
 		      y.addOrderRule("Year");
 		      myChart.addSeries("Type", dimple.plot.area);
