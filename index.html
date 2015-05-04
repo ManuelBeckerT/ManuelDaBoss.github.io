@@ -28,7 +28,7 @@
         	    console.table(data);
 		      var myChart = new dimple.chart(svg, data);
 		      myChart.setBounds(75, 30, 485, 330);
-		      myChart.addPctAxis("x", "%Losses");
+		      myChart.addPctAxis("x", "PIB");
 		      var y = myChart.addCategoryAxis("y", "Year");
 		
 		      myChart.addSeries("Channel", dimple.plot.area);
