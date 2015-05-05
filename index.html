@@ -24,14 +24,14 @@
 		    var svg = dimple.newSvg("#chartContainer", 590, 400);
 		    var dsv = d3.dsv(";", "text/plain");
     		    //d3.csv("data/movies.csv", function (data)
-    		    dsv("data/datos.csv", function (data) {
+    		    dsv("data/datoss.csv", function (data) {
         	    console.table(data);
 		      var myChart = new dimple.chart(svg, data);
 		      myChart.setBounds(75, 30, 485, 330);
 		      myChart.addPctAxis("x", "Losses");
 		      var y = myChart.addCategoryAxis("y", "Year");
 		
-		     
+		      myChart.addSeries("Channel", dimple.plot.area);
 		      myChart.addLegend(60, 10, 500, 20, "right");
 		      myChart.draw();
 		    });
