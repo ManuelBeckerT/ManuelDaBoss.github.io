@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+	<head>
+
+		<title> Proyecto Pensamiento Visual </title>
+		<header> <em> Entrega Pensamiento Visual </em> </header>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+  		<script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+		<script type="text/javascript">
+	<head>
+	
+	<body>
+		<nav>
+			 <ul>
+ 				<li><a href="inicio.html" title="Inicio">Inicio</a></li>
+ 			
+				<li><a href="proyect.html" title="Proyecto">Proyecto</a></li>
+			</ul>
+		</nav>
+
+		<div id="chartContainer">
+  			<script src="/lib/d3.v3.4.8.js"></script>
+  			<script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+  			<script type="text/javascript">
+  				var svg = dimple.newSvg("#chartContainer", 590, 400);
+    				d3.tsv("/data/datos.csv", function (data) {
+      					data = dimple.filterData(data, "Owner", ["Aperture", "Black Mesa"])
+     					var myChart = new dimple.chart(svg, data);
+   					myChart.setBounds(75, 30, 485, 330);
+    					myChart.addPctAxis("x", "US$");
+    					var y = myChart.addCategoryAxis("y", "Año");
+      					y.addOrderRule("Date");
+      					myChart.addSeries("Channel", dimple.plot.area);
+      					myChart.addLegend(60, 10, 500, 20, "right");
+      					myChart.draw();
+    				});
+			</script>
+		</div>
+		
+		
+	<body>
+
+
+<html>
