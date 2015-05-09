@@ -2,11 +2,11 @@ body {
   font-family: 'Verdana';
 }
 
-.navbar {
+img {
   text-align: center;
-  height: 50px;
-
+  
 }
+
 li {
   display: inline-block;
   list-style-type: none;
