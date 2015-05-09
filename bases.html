@@ -5,6 +5,8 @@
 		<meta charset="utf-8"/>
 		<title> Proyecto </title>
 		<header> <em> Entrega Ayudantía Pensamiento Visual </em> </header>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+  		<script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
 	</head>
 
 	<body>
@@ -20,5 +22,28 @@
 		<iframe src="ManuelDaBoss.github.io/datos_evento.htm"><p2><a href="ManuelDaBoss.github.io/datos_evento.htm" title= "Datos por evento"><strong>Evento</strong></a></p2></iframe>
 		<iframe src="ManuelDaBoss.github.io/datos_región.htm"><p3><a href="ManuelDaBoss.github.io/datos_región.htm" title= "Datos por región"><strong>Región</strong></a></p3></iframe>
 		<iframe src="ManuelDaBoss.github.io/PIB.htm"><p4><a href="ManuelDaBoss.github.io/PIB.htm" title= "Producto Interno Bruto"><strong>PIB</strong></a></p4></iframe>
+		
+		</nav>
+
+		<div id="chartContainer">
+		  <script src="/lib/d3.v3.4.8.js"></script>
+		  <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+		  <script type="text/javascript">
+		    var svg = dimple.newSvg("#chartContainer", 590, 400);
+		    var dsv = d3.dsv(";", "text/plain");
+    		    //d3.csv("data/movies.csv", function (data)
+    		    dsv("data/datos.csv", function (data) {
+        	    console.table(data);
+		      var myChart = new dimple.chart(svg, data);
+		      myChart.setBounds(75, 30, 485, 330);
+		      myChart.addPctAxis("x", "Values");
+		      var y = myChart.addCategoryAxis("y", "Year");
+		      y.addOrderRule("Year");
+		      myChart.addSeries("Type", dimple.plot.area);
+		      myChart.addLegend(60, 10, 500, 20, "right");
+		      myChart.draw();
+		    });
+		  </script>
+		</div>
 	</body>
 </html>
