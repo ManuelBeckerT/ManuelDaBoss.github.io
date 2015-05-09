@@ -34,6 +34,10 @@ li a:hover {
 
 }
 
+.imagen {
+    margin-right: 10px
+}
+
 header {
     background-color:black;
     color:white;
