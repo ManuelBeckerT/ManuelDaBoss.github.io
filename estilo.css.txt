@@ -1,4 +1,26 @@
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 10px;
+  background: gray;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.navbar li a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
 .navbar li:hover {
   color: black;
   background: white;
+}
+
+.navbar li a:hover {
+  color: black;
+  background: white;
+
 }
