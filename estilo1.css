@@ -1,4 +1,14 @@
-﻿.navbar li {
+body {
+  font-family: 'Verdana';
+}
+
+.navbar {
+  text-align: center;
+  height: 50px;
+
+}
+
+.navbar li {
   display: inline-block;
   list-style-type: none;
   margin-left: 10px;
