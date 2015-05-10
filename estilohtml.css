@@ -1,0 +1,44 @@
+body {
+  font-family: 'Verdana';
+  text-align: center;
+}
+
+
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 10px;
+  background: gray;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+li a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+li:hover {
+  color: black;
+  background: white;
+}
+
+li a:hover {
+  color: black;
+  background: white;
+
+}
+
+img {
+    margin-right: 10px
+}
+
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
