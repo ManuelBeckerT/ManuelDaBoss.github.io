@@ -33,9 +33,11 @@ li a:hover {
 }
 
 img {
-    margin-right: 10px
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
 }
-
 header {
     background-color:black;
     color:white;
