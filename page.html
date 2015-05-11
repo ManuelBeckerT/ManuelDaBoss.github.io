@@ -19,17 +19,30 @@
 
 // First, create an object containing LatLng and population for each city.
 var citymap = {};
-citymap['santiago'] = {
-  center: new google.maps.LatLng(-33.45, -70.666667),
-  population: 2714856
+citymap['La Ligua'] = {
+  center: new google.maps.LatLng(-32.45, -71.2167),
+  population: 1,898490045
+
 };
 citymap['Valdivia'] = {
   center: new google.maps.LatLng(-39.8139, -73.2458),
-  population: 8405837
+  title='La Ligua 1965',
+  population: 2681,688466
+
 };
-citymap['losangeles'] = {
-  center: new google.maps.LatLng(34.052234, -118.243684),
-  population: 3857799
+citymap['Valparaíso'] = {
+  center: new google.maps.LatLng(-33.066666666667, -71.6167),
+  title='Valparaíso 1906',
+  population: 10,67599408
+
+};
+citymap['vancouver'] = {
+  center: new google.maps.LatLng(49.25, -123.1),
+  population: 603502
+};
+citymap['vancouver'] = {
+  center: new google.maps.LatLng(49.25, -123.1),
+  population: 603502
 };
 citymap['vancouver'] = {
   center: new google.maps.LatLng(49.25, -123.1),
@@ -60,7 +73,7 @@ function initialize() {
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100
+      radius: Math.sqrt(citymap[city].population) * 10000
     };
     // Add the circle for this city to the map.
     cityCircle = new google.maps.Circle(populationOptions);
