@@ -6,7 +6,67 @@
   <title> Proyecto Pensamiento Visual </title>
   <link href="estilo1.css" rel="stylesheet" />
   <header> <em> Entrega Pensamiento Visual </em> </header>
-  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Número de Evacuados vs VEI"
+      }, 
+      animationEnabled: true,              
+      data: [
+      {        
+        type: "splineArea",
+        color: "rgba(54,158,173,.7)",
+
+        dataPoints: [
+        {y: 200},     
+        {y: 300},     
+        {y: 300},     
+        {y: 300},     
+        {y: 200},     
+        {y: 200},     
+        {y: 300},     
+        {y: 500},     
+        {y: 300},     
+        {y: 300},     
+        {y: 400},     
+        {y: 500},
+        {y: 200},     
+        {y: 000},     
+        {y: 500},      
+        ]
+      },
+      {        
+        type: "splineArea",
+        color: "rgba(194,70,66,.7)",
+        dataPoints: [
+        {y: 0},     
+        {y: 0},     
+        {y: 0},     
+        {y: 52},     
+        {y: 0},     
+        {y: 1000},     
+        {y: 500},     
+        {y: 11},     
+        {y: 14},     
+        {y: 71},     
+        {y: 3900},     
+        {y: 600},
+        {y: 140},     
+        {y: 3385},     
+        {y: 6600},             
+        ]
+      }             
+      
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+///////
   <script type="text/javascript">
   window.onload = function () {
     var chart = new CanvasJS.Chart("chartContainer",
@@ -111,38 +171,11 @@ type="video/x-ms-avi">
 </object>
 
 <br>
-<br>
-
-<object width=288 height=512
-  id      ="MediaPlayer"
-  type    ="application/x-oleobject"
-  standby ="Loading Windows Media Player components..."
-  classid ="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95"
-  codebase="http://activex.microsoft.com/activex/controls/mplayer/
-            en/nsmp2inf.cab#Version=6,4,7,1112">
-  <param name="showControls" value="true">
-  <param name="autoStart"    value="false">
-  <param name="filename"     value="../videos/terremotos.avi">
-  <embed width=288 height=512  src="../videos/terremotos.avi"
-         type="application/x-mplayer2" showControls=1 autoStart=0></embed>
- </object>
  
- <br>
- <br>
- 
- <object id="MediaPlayer1" CLASSID="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
-standby="Loading Microsoft Windows® Media Player components..." type="application/x-oleobject" width="280" height="256">
-<param name="../videos/terremotos.avi" value="../videos/terremotos.avi">
-<param name="animationatStart" value="true">
-<param name="transparentatStart" value="true">
-<param name="autoStart" value="true">
-<param name="showControls" value="true">
-<param name="Volume" value="-450">
-<embed type="application/x-mplayer2" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" src="../videos/terremotos.avi" name="MediaPlayer1" width=280 height=256 autostart=1 showcontrols=1 volume=-450>
-</object>
   <div id="chartContainer" style="height: 300px; width: 100%;">
   </div>
-
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
 <footer><img src='../imagenes/dilab_logo.jpg'/></footer>
 </body>
 
