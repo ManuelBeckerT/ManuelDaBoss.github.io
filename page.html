@@ -51,6 +51,62 @@ citymap['puntaarenas'] = {
   center: new google.maps.LatLng(-53.1667, -70.9333),
   population: 1
 };
+citymap['ñuble'] = {
+  center: new google.maps.LatLng(-36.1333, -72.7833),
+  population: 3
+};
+citymap['calama'] = {
+  center: new google.maps.LatLng(-22.4667, -68.9333),
+  population: 2
+};
+citymap['valdivia'] = {
+  center: new google.maps.LatLng(-39.8139, -73.2458),
+  population: 1
+};
+citymap['laligua'] = {
+  center: new google.maps.LatLng(-32.45, -71.2167),
+  population: 147
+};
+citymap['taltal'] = {
+  center: new google.maps.LatLng(-25.2833, -69.7667),
+  population: 1
+};
+citymap['tocopilla'] = {
+  center: new google.maps.LatLng(-22.0964, -70.2),
+  population: 4
+};
+citymap['illapel'] = {
+  center: new google.maps.LatLng(-31.6333, -71.1667),
+  population: 34
+};
+citymap['algarrobo'] = {
+  center: new google.maps.LatLng(-33.3911, -71.6928),
+  population: 23
+};
+citymap['arica'] = {
+  center: new google.maps.LatLng(-18,4770, -70,31453),
+  population: 4
+};
+citymap['punitaqui'] = {
+  center: new google.maps.LatLng(-30.9, -71.2667),
+  population: 12
+};
+citymap['tarapaca'] = {
+  center: new google.maps.LatLng(-20.2167, -70.15),
+  population: 2
+};
+citymap['tocopilla'] = {
+  center: new google.maps.LatLng(-22.0964, -70.2),
+  population: 1
+};
+citymap['concepcion'] = {
+  center: new google.maps.LatLng(-36.8282, -73.0514),
+  population: 2
+};
+citymap['iquique'] = {
+  center: new google.maps.LatLng(-20.2167, -70.15),
+  population: 1
+};
 
 var cityCircle;
 
@@ -76,7 +132,7 @@ function initialize() {
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
-      radius: (citymap[city].population) * 1000
+      radius: (citymap[city].population) * 10000
     };
     
     // Add the circle for this city to the map.
