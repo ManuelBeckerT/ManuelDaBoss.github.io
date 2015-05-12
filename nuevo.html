@@ -1,0 +1,94 @@
+?<!DOCTYPE HTML>
+<html>
+
+<head>  
+  
+  <title> Proyecto Pensamiento Visual </title>
+  <link href="estilo1.css" rel="stylesheet" />
+  <header> <em> Entrega Pensamiento Visual </em> </header>
+  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer1",
+    {
+      title:{
+        text: "Número de Evacuados vs VEI"
+      }, 
+      animationEnabled: true,              
+      data: [
+      {        
+        type: "splineArea",
+        color: "rgba(54,158,173,.7)",
+
+        dataPoints: [
+        {y: 200},     
+        {y: 300},     
+        {y: 300},     
+        {y: 300},     
+        {y: 200},     
+        {y: 200},     
+        {y: 300},     
+        {y: 500},     
+        {y: 300},     
+        {y: 300},     
+        {y: 400},     
+        {y: 500},
+        {y: 200},     
+        {y: 000},     
+        {y: 500},      
+        ]
+      },
+      {        
+        type: "splineArea",
+        color: "rgba(194,70,66,.7)",
+        dataPoints: [
+        {y: 0},     
+        {y: 0},     
+        {y: 0},     
+        {y: 52},     
+        {y: 0},     
+        {y: 1000},     
+        {y: 500},     
+        {y: 11},     
+        {y: 14},     
+        {y: 71},     
+        {y: 3900},     
+        {y: 600},
+        {y: 140},     
+        {y: 3385},     
+        {y: 6600},             
+        ]
+      }             
+      
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+  <h1><strong>Visualización de Datos</strong></stron></h1>
+  
+  <ul>
+ 	<li><a href="index.html" title="Inicio">Inicio</a></li>
+ 	
+	<li><a href="page.html" title="Proyecto">Proyecto</a></li>
+				
+	<li><a href="gr1.html" title="Gráficos">Visualizaciones</a></li>
+  </ul>
+  
+  <br>
+  <p1>A continuación se presenta un flash con nuestros datos relevantes para concluir que Chile SÍ aprende.</p1>
+  <br>
+  <br>
+<br>
+  <h2>Nuevo gráfico</h2>
+  <br>
+  <div id="chartContainer1" style="height: 300px; width: 100%;">
+  </div>
+  
+<footer><img src='../imagenes/dilab_logo.jpg'/></footer>
+</body>
+</html>
