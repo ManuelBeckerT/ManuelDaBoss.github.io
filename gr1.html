@@ -77,10 +77,21 @@ chart.render();
 <body>
   <h1><strong>Visualización de Datos</strong></stron></h1>
   <br>
-  <object data="../videos/terremotos.avi" type="video/x-msvideo" width="320" height="255">
-<param name="src" value="../videos/terremotos.avi">
-<param name="autoStart" value="0">
-alt : <a href="../videos/terremotos.avi">Muestra de nuestro índice</a>
+  <object 
+id="mediaPlayer1" 
+width="320" height="260" 
+data="videos/terremotos.avi"
+codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" 
+standby="Cargando Microsoft Windows Media Player..." 
+type="video/x-ms-wmv">
+<param name="fileName" value="../videos/terremotos.avi" />
+<param name="animationatStart" value="true" />
+<param name="transparentatStart" value="true" />
+<param name="autoStart" value="false" />
+<param name="showControls" value="true" />
+<param name="ShowAudioControls" value="true" />
+<param name="ShowStatusBar" value="true" />
+<param name="playcount" value="true" />
 </object>
   <div id="chartContainer" style="height: 300px; width: 100%;">
   </div>
