@@ -7,69 +7,9 @@
   <link href="estilo1.css" rel="stylesheet" />
   <header> <em> Entrega Pensamiento Visual </em> </header>
   
-  <script type="text/javascript">
-  window.onload = function () {
-    var chart1 = new CanvasJS.Chart("chartContainer1",
-    {
-      title:{
-        text: "Número de Evacuados vs VEI"
-      }, 
-      animationEnabled: true,              
-      data: [
-      {        
-        type: "splineArea",
-        color: "rgba(54,158,173,.7)",
-
-        dataPoints: [
-        {y: 200},     
-        {y: 300},     
-        {y: 300},     
-        {y: 300},     
-        {y: 200},     
-        {y: 200},     
-        {y: 300},     
-        {y: 500},     
-        {y: 300},     
-        {y: 300},     
-        {y: 400},     
-        {y: 500},
-        {y: 200},     
-        {y: 000},     
-        {y: 500},      
-        ]
-      },
-      {        
-        type: "splineArea",
-        color: "rgba(194,70,66,.7)",
-        dataPoints: [
-        {y: 0},     
-        {y: 0},     
-        {y: 0},     
-        {y: 52},     
-        {y: 0},     
-        {y: 1000},     
-        {y: 500},     
-        {y: 11},     
-        {y: 14},     
-        {y: 71},     
-        {y: 3900},     
-        {y: 600},
-        {y: 140},     
-        {y: 3385},     
-        {y: 6600},             
-        ]
-      }             
-      
-      ]
-    });
-
-    chart1.render();
-  }
-  </script>
-  
 <script type="text/javascript" src="source/swfobject.js"></script>
 <script type="text/javascript">
-    swfobject.embedSWF("videos/terremotos.swf.swf", "myContent", "300", "120", "9.0.0");
+    swfobject.embedSWF("videos/terremotos.swf.swf", "myContent", "500", "300", "9.0.0");
 </script>
 <script type="text/javascript" src="canvasjs.min.js"></script>
 
@@ -130,6 +70,7 @@
     });
 
     chart1.render();
+    
     var chart = new CanvasJS.Chart("chartContainer",
     {
       zoomEnabled: true,
@@ -216,20 +157,6 @@ chart.render();
   <p1>A continuación se presenta un flash con nuestros datos relevantes para concluir que Chile SÍ aprende.</p1>
   <br>
   <br>
-  
-  <object id="mediaPlayer1"  width="1200" height="650" data="/videos/terremotos.avi"
-codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" 
-standby="Cargando Microsoft Windows Media Player..." 
-type="video/x-ms-wmv">
-<param name="../videos/terremotos.avi" value="../videos/terremotos.avi" />
-<param name="animationatStart" value="true" />
-<param name="transparentatStart" value="true" />
-<param name="autoStart" value="false" />
-<param name="showControls" value="true" />
-<param name="ShowAudioControls" value="true" />
-<param name="ShowStatusBar" value="true" />
-<param name="playcount" value="true" />
-</object>
     <div id="myContent">
       <p>Alternative content</p>
     </div>
