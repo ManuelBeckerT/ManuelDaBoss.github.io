@@ -21,7 +21,6 @@
 var citymap = {};
 citymap['chicago'] = {
   center: new google.maps.LatLng(41.878113, -87.629798),
-  color: 'blue',
   population: 2714856
 };
 citymap['newyork'] = {
@@ -61,7 +60,7 @@ function initialize() {
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100
+      radius: (citymap[city].population) * 100000
     };
     // Add the circle for this city to the map.
     cityCircle = new google.maps.Circle(populationOptions);
