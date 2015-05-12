@@ -3,7 +3,11 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+=======
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+>>>>>>> origin/master
     <meta charset="utf-8">
     <title>Circles</title>
     <style>
@@ -20,71 +24,21 @@
 
 // First, create an object containing LatLng and population for each city.
 var citymap = {};
-citymap['La Ligua'] = {
-  center: new google.maps.LatLng(-32.45, -71.2167),
-  population: 1,898490045
-
+citymap['chicago'] = {
+  center: new google.maps.LatLng(41.878113, -87.629798),
+  population: 2714856
 };
-citymap['Valdivia'] = {
-  center: new google.maps.LatLng(-39.8139, -73.2458),
-  title='La Ligua 1965',
-  population: 2681,688466
-
+citymap['newyork'] = {
+  center: new google.maps.LatLng(40.714352, -74.005973),
+  population: 8405837
 };
-citymap['Valparaíso'] = {
-  center: new google.maps.LatLng(-33.066666666667, -71.6167),
-  title='Valparaíso 1906',
-  population: 10,67599408
-
-};
-<<<<<<< HEAD
-citymap['vancouver'] = {
-  center: new google.maps.LatLng(49.25, -123.1),
-  population: 603502
+citymap['losangeles'] = {
+  center: new google.maps.LatLng(34.052234, -118.243684),
+  population: 3857799
 };
 citymap['vancouver'] = {
   center: new google.maps.LatLng(49.25, -123.1),
   population: 603502
-};
-citymap['vancouver'] = {
-  center: new google.maps.LatLng(49.25, -123.1),
-  population: 603502
-=======
-citymap['vallenar'] = {
-  center: new google.maps.LatLng(-28.5708, -70.7581),
-  population: 57,99737321
-
-};
-citymap['talca'] = {
-  center: new google.maps.LatLng(-35.4333, -71.6667),
-  population: 42,50189794
-
-};
-citymap['Chillán'] = {
-  center: new google.maps.LatLng(-36.6, -72.1167),
-  population: 42,50189794
-
-};
-citymap['ovalle'] = {
-  center: new google.maps.LatLng(-30.6, -71.2),
-  population: 42,50189794
-
-};
-citymap['copiapó'] = {
-  center: new google.maps.LatLng(-27.3664, -70.3331),
-  population: 10,67599408
-
-};
-citymap['angol'] = {
-  center: new google.maps.LatLng(-37.8, -72.7167),
-  population: 1,344028024
-
-};
-citymap['punta arenas'] = {
-  center: new google.maps.LatLng(-53.1667, -70.9333),
-  population: 7,558025
-
->>>>>>> parent of ade338c... Update page.html
 };
 =======
   <script type="text/javascript">
@@ -167,7 +121,7 @@ citymap['punta arenas'] = {
       fillOpacity: 0.35,
       map: map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 10000
+      radius: Math.sqrt(citymap[city].population) * 100
     };
     // Add the circle for this city to the map.
     cityCircle = new google.maps.Circle(populationOptions);
@@ -176,9 +130,17 @@ citymap['punta arenas'] = {
 chart.render();
 >>>>>>> parent of 53ae07a... Update page.html
 }
+<<<<<<< HEAD
 </script>
 <script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
 		
+=======
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>    
+ 
+>>>>>>> origin/master
   <meta charset="utf-8"/>
   <link href="estilo1.css" rel="stylesheet" />
   <title>Print</title>
