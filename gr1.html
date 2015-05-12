@@ -75,6 +75,61 @@
 
   <script type="text/javascript">
   window.onload = function () {
+  var chart1 = new CanvasJS.Chart("chartContainer1",
+    {
+      title:{
+        text: "Número de Evacuados vs VEI"
+      }, 
+      animationEnabled: true,              
+      data: [
+      {        
+        type: "splineArea",
+        color: "rgba(54,158,173,.7)",
+
+        dataPoints: [
+        {y: 200},     
+        {y: 300},     
+        {y: 300},     
+        {y: 300},     
+        {y: 200},     
+        {y: 200},     
+        {y: 300},     
+        {y: 500},     
+        {y: 300},     
+        {y: 300},     
+        {y: 400},     
+        {y: 500},
+        {y: 200},     
+        {y: 000},     
+        {y: 500},      
+        ]
+      },
+      {        
+        type: "splineArea",
+        color: "rgba(194,70,66,.7)",
+        dataPoints: [
+        {y: 0},     
+        {y: 0},     
+        {y: 0},     
+        {y: 52},     
+        {y: 0},     
+        {y: 1000},     
+        {y: 500},     
+        {y: 11},     
+        {y: 14},     
+        {y: 71},     
+        {y: 3900},     
+        {y: 600},
+        {y: 140},     
+        {y: 3385},     
+        {y: 6600},             
+        ]
+      }             
+      
+      ]
+    });
+
+    chart1.render();
     var chart = new CanvasJS.Chart("chartContainer",
     {
       zoomEnabled: true,
