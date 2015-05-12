@@ -3,10 +3,7 @@ body {
   text-align: center;
 }
 
-p2 {
-    border:1px solid grey;
-    padding:20px;
-}
+
 
 li {
   display: inline-block;
